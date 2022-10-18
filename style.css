@@ -11,6 +11,7 @@
 body{
     /* scroll-behavior: smooth; */
     /* overflow: hidden; */
+    scroll-behavior: smooth;
 }
 html{
     font-size: 62.5%;
@@ -26,6 +27,8 @@ html{
     background-color: #fff;
     width: 100%;
     height: 100vh;
+    padding: 0px;
+    margin: 0px;
     
 
 }
@@ -38,8 +41,10 @@ nav{
 
 }
 nav ul{
-    /* display: flex; */
-    margin-right: 5rem;
+    /* display: flex;
+    justify-content: space-between; */
+    /* align-items: center; */
+    margin-left: 50rem;
    
 }
 nav ul li{
@@ -119,6 +124,7 @@ ul li a:hover::after{
 }
 .text{
     margin-left: 22rem;
+    margin-top: 1rem;
 }
 
 .header-text .text h1{
@@ -179,8 +185,8 @@ div.social{
 
 /* --------------About Section ----------- */
 #about{
-    height: 100vh;
-    width: 100%;
+    min-height: 100vh;
+    max-width: 100%;
     padding: 2rem 4rem;
 }
 #about .about{
@@ -201,20 +207,22 @@ div.social{
     background-color: #E6E6FA;
     border-radius: 2rem;
 }
-.content{
-    padding: 1rem 1rem;
-    /* animation: slide-up 2s; */
-}
 @keyframes slide-up{
     from{
-        opacity: 0.5;
-        line-height: 50px;
+        opacity: 0.2;
+        line-height: 270px;
+
     }
     to{
         opacity: 1;
-        line-height: 25px;
+        line-height: 20px;
     }
 }
+.content{
+    padding: 1rem 1rem;
+    animation: slide-up 2s;
+}
+
 .content h1{
     margin: 2rem 2rem;
     margin-bottom: 0;
@@ -249,7 +257,7 @@ div.social{
 }
 .content .contects button{
     margin-top: 3rem;
-    padding: 1rem 3rem;
+    padding: 0.5rem 2.1rem;
     background-color: #5D3FD3;
     border: none;
     outline: none;
@@ -299,6 +307,8 @@ div.social{
     height: 140vh;
     width: 100%px;
     padding: 4rem 6rem;
+    padding: 0;
+    margin:0;
     background-color:blueviolet;
 
 }
@@ -336,7 +346,8 @@ div.social{
 #education{
     height: 120vh;
     width: 100%;
-    padding: 4rem 6rem;
+    /* padding: 4rem 6rem; */
+    margin: 0px;
     /* background-color: black; */
 }
 #education h1{
@@ -391,6 +402,7 @@ div.social{
     height: 100vh;
     width: 100%;
     background-color: #E6E6FA;
+    display: inline-block;
     
 }
 .project{
@@ -612,316 +624,13 @@ footer h5{
 nav .fa-solid{
     display: none;
 }
+.menu{
+    display: none;
 
-
-
-
-
-/* Media qury for small screens ----- */
-@media only screen and (max-width:600px) {
-    .header-text .text h1{
-        font-size: 2rem;
-        
-    }
-    .header-text .text h2{
-        font-size: 1rem;
-        
-    }
-    #header{
-        background-color: #fff;
-        
-        height: 100vh;
-        width: 500px;
-        padding: 5rem 0;
-        
-    
-    }
-    .header-text{
-        display: flex;
-        margin-top: 10%;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-       
-        /* background: #000; */
-        
-       
-    }
-    .header-text  .photo{
-        /* border: 1px solid black; */
-        width: 20rem;
-        margin: auto;
-    
-    }
-    nav .fa-solid{
-        display: block;
-        font-size: 1.5rem;
-        padding-bottom: 1rem;
-        position: absolute;
-        top: 10px;
-        left: 25px;
-    }
-    i.menu{
-        position: absolute;
-        top: 25px;
-        left: 320px;
-    }
-    .text{
-        margin-left: 50%;
-    }
-    nav{
-        width: 200px;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    nav ul{
-        justify-content: center;
-        margin-right: 0rem;
-
-    }
-    .logo{
-        width: 20rem;
-        /* border: 1px solid; */
-        margin-top: 0;
-    }
-    nav .logo h1{
-        font-size: 2.5rem;
-        margin-left: 4rem;
-    }
-    nav ul{
-        background-color: blueviolet;
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 22rem;
-        height: 100vh;
-        margin-right: 0;
-        margin-left: 0;
-        padding-top: 50px;
-        padding: 0 0rem;
-        transition: right .5s ease-in-out;
-
-    }
-    nav ul li{
-        /* margin-right: 3rem; */
-        list-style-type: none;
-        display: block;
-        margin: 3rem;
-        cursor: pointer;
-    
-    }
-    nav ul li a:hover{
-        color: #fff;
-    }
-    .header-text .photo img{
-        width: 20rem;
-        height: 20rem;
-        margin-left: -7rem;
-        margin-top: 8rem;
-    }
-    .text{
-        margin-left: 10rem;
-    }
-    .header-text{
-        margin-top: 5rem;
-    }
-    div.social{
-        margin-top: 1rem;
-        display: flex;
-        /* margin-right: 10rem; */
-    
-    }
-   
-    /* ------aaaaaabout section----- */
-    #about{
-        height: 100vh;
-        width: 500px;
-        padding: 2rem 2rem;
-    }
-    #about .about{
-        margin-right: 2rem;
-    }
-    .about .about-content{
-        margin-left: 3rem;
-        margin-right: 12rem;
-      
-    }
-    .about .img{
-      
-        display: none;
-    
-    }
-
-
-    /* Skills---section */
-    #skills{
-        height: 170vh;
-        width: 500px;
-        padding: 4rem 1rem;
-        background-color:blueviolet;
-    
-    }
-
-
-
-    .skills{
-        /* grid-template-rows: repeat(2 ,1fr);
-        grid-template-columns: repeat( 2,1fr);
-        row-gap: 10px;
-        height: 140vh; */
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-evenly;
-
-    }
-
-    .skills .item{
-        height: 10rem;
-        width: 20rem;
-        
-    
-    }
-    .skills .item img{
-        width: 10rem;
-        height: 10rem;
-        border-radius: 1.5rem;
-        /* padding: 5rem 0; */
-        /* object-fit: cover;
-        object-position: center; */
-        
-        
-    
-    }
-    /* --------------education---------- */
-    #education{
-        height: 160vh;
-        width: 500px;
-
-        padding: 4rem 6rem;
-        /* background-color: black; */
-    }
-    .education{
-        flex-direction: column;
-    }
-    
-    .education .box{
-        height: 45rem;
-        width: 35rem;
-        margin-top: 4rem;
-      
-        flex-direction: column;
-        flex-wrap: wrap;
-    
-       
-    
-    }
-    .education .box h2{
-        margin-bottom: 1rem;
-        font-size: 1rem;
-    }
-    .education .box img{
-        height: 30rem;
-        width: 30rem;
-        border-radius: 2rem;
-        object-fit: cover;
-        object-position: center;
-    
-    
-    }
-
-
-    /* project section */
-    #project{
-        height: 280vh;
-        width: 500px;
-        background-color: #E6E6FA;
-        
-    }
-    .project{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        /* justify-content: center; */
-        align-items: center;
-       
-    
-    
-    }
-    .project .item{
-        /* align-self: center; */
-        padding: 1rem;
-        margin-top: 4rem;
-        background-color: rgba(0, 0, 0, 0.315);
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-        border-radius: 2rem;
-    
-    }
-    .project img{
- 
-        width: 25rem;
-        height: 25rem;
-        object-fit: cover;
-      
-        border-radius: 2rem;
-        
-    
-    
-    }
-
-
-
-    /* contact section */
-
-    #contact{
-        padding: 1rem 4rem;
-        height: 180vh;
-        width: 500px;
-        background-color: black;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-    
-    
-    
-    }
-    .contact{
-        margin-top: 5rem;
-        height: 200vh;
-        width: 400px;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-
-        justify-content: center;
-      
-        
-    
-    }
-    .contact .box1{
-        margin-right: 15rem;
-        margin-bottom: 2rem;
-        height: 25rem;
-        width: 30rem;
-
-    }
-    
-
-
-
-
-
-
-
-
-
-
-   
 }
+
+
+
+
+
 
