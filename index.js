@@ -1,3 +1,6 @@
+
+
+
 let sidemenu = document.getElementById("sidemenu");
 let menubtn = document.getElementById("menu");
 function openmenu(){

@@ -1,38 +1,39 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-/* font-family: 'Roboto', sans-serif; */
-
-
-
+    /* font-family: 'Roboto', sans-serif; */
 }
-body{
-    /* scroll-behavior: smooth; */
-    /* overflow: hidden; */
+
+body {
+    
     scroll-behavior: smooth;
 }
-html{
+
+html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 
 }
-.container{
+
+.container {
     /* border: 1px solid black; */
     width: 100%;
     height: 100vh;
 }
-#header{
+
+#header {
     background-color: #fff;
     width: 100%;
     height: 100vh;
     padding: 0px;
     margin: 0px;
-    
+
 
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     height: 6rem;
@@ -40,20 +41,21 @@ nav{
     align-items: center;
 
 }
-nav ul{
-    /* display: flex;
-    justify-content: space-between; */
-    /* align-items: center; */
+
+nav ul {
+  
     margin-left: 50rem;
-   
+
 }
-nav ul li{
+
+nav ul li {
     margin-right: 3rem;
     list-style-type: none;
     display: inline-block;
 
 }
-nav ul li a{
+
+nav ul li a {
     font-size: 2rem;
     text-decoration: none;
     color: rgb(16, 6, 109);
@@ -63,133 +65,151 @@ nav ul li a{
 
 
 }
-li a:hover{
+
+li a:hover {
     color: blueviolet;
 }
-nav ul li a::after{
+
+nav ul li a::after {
     content: "";
     position: absolute;
     height: 3px;
     width: 0%;
     left: 0;
     bottom: -5px;
-    background:blueviolet;
+    background: blueviolet;
     transition: all 0.3s ease-in;
 
 
 
 }
-ul li a:hover::after{
+
+ul li a:hover::after {
     width: 100%;
-    
+
 }
-.logo{
+
+.logo {
     width: 10rem;
 
 }
-.logo h1{
+
+.logo h1 {
     font-size: 5rem;
     margin-left: 3rem;
 }
-.logo h1 span{
+
+.logo h1 span {
     color: blueviolet;
     letter-spacing: 1px;
 }
 
-.header-text{
+.header-text {
     display: flex;
     margin-top: 10%;
     justify-content: space-between;
     align-items: center;
-   
+
     /* background: #000; */
-    
+
 }
-.header-text  .photo{
+
+.header-text .photo {
     /* border: 1px solid black; */
     width: 35rem;
     margin-right: 20rem;
 
 }
-.header-text .photo img{
-   height: 35rem;
-   width: 35rem;
-   border-radius: 50%;
-   object-fit: cover;
-   object-position: center;
-   /* border: 1px solid; */
-  
+
+.header-text .photo img {
+    height: 35rem;
+    width: 35rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    /* border: 1px solid; */
+
 
 
 }
-.text{
+
+.text {
     margin-left: 22rem;
     margin-top: 1rem;
 }
 
-.header-text .text h1{
+.header-text .text h1 {
     font-size: 5rem;
-    
+
 }
-.header-text .text h1 span{
-    
+
+.header-text .text h1 span {
+
     color: rgb(139, 14, 255);
 }
-.header-text .text  p{
+
+.header-text .text p {
     font-size: 3rem;
 }
-.header-text .text h2{
+
+.header-text .text h2 {
     font-size: 3rem;
     font-weight: 400;
     color: rgb(154, 42, 228);
 }
-.header-text .text button{
+
+.header-text .text button {
     margin-top: 4rem;
     background-color: #fff;
     font-size: 1.7rem;
     padding: 1rem 3rem;
     color: blueviolet;
-    border: 1px solid blueviolet ;
+    border: 1px solid blueviolet;
     cursor: pointer;
     /* border: none; */
     outline: none;
     border-radius: 0.8rem;
     font-weight: 500;
     transition: all 0.2s ease-in-out;
-   
+
 
 }
-.header-text .text button:hover{
+
+.header-text .text button:hover {
     color: #fff;
     background: blueviolet;
 
 }
-div.social{
+
+div.social {
     margin-top: 5rem;
     margin-right: 20rem;
 
 }
-.social a{
+
+.social a {
     margin: 0rem 3rem;
     font-size: 2.5rem;
-  
+
 
 }
-.social a:hover{
+
+.social a:hover {
     color: blueviolet;
-  
+
 }
 
 
 
 
 /* --------------About Section ----------- */
-#about{
+#about {
     min-height: 100vh;
     max-width: 100%;
     padding: 2rem 4rem;
 }
-#about .about{
+
+#about .about {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -199,7 +219,7 @@ div.social{
 
 }
 
-.about .about-content{
+.about .about-content {
     min-height: 50rem;
     max-width: 50rem;
     margin: 2rem 4rem;
@@ -207,36 +227,41 @@ div.social{
     background-color: #E6E6FA;
     border-radius: 2rem;
 }
-@keyframes slide-up{
-    from{
+
+@keyframes slide-up {
+    from {
         opacity: 0.2;
         line-height: 270px;
 
     }
-    to{
+
+    to {
         opacity: 1;
         line-height: 20px;
     }
 }
-.content{
+
+.content {
     padding: 1rem 1rem;
     animation: slide-up 2s;
 }
 
-.content h1{
+.content h1 {
     margin: 2rem 2rem;
     margin-bottom: 0;
     font-size: 2.5rem;
     color: rgb(16, 6, 109);
 }
-.content h2{
+
+.content h2 {
     margin: 0rem 2rem;
     font-size: 1.6rem;
     color: rgb(16, 6, 109);
 }
-.content p{
+
+.content p {
     color: rgb(14, 4, 4);
-    
+
     font-size: 1.4rem;
     padding: 1.5rem 2rem;
     font-family: 'Roboto', sans-serif;
@@ -244,18 +269,22 @@ div.social{
 
 
 }
-.content .contects{
+
+.content .contects {
     margin-left: 2rem;
 
 }
-.content .contects h3{
+
+.content .contects h3 {
     margin-top: 0.8rem;
 }
-.content .contects span{
+
+.content .contects span {
     color: blueviolet;
 
 }
-.content .contects button{
+
+.content .contects button {
     margin-top: 3rem;
     padding: 0.5rem 2.1rem;
     background-color: #5D3FD3;
@@ -269,32 +298,38 @@ div.social{
 
 
 }
-.span{
+
+.span {
     color: blueviolet;
 }
-.content .contects button i{
+
+.content .contects button i {
     font-size: 1.4rem;
 }
+
 /* -------image------- */
-.about .img{
+.about .img {
     min-height: 50rem;
     max-width: 50rem;
     /* border: 1px solid; */
     margin-bottom: 3rem;
 
 }
-.about img{
+
+.about img {
     min-height: 50rem;
     max-width: 50rem;
     border-radius: 2rem;
-    box-shadow: 6px 6px 4px 6px  #CF9FFF ;
+    box-shadow: 6px 6px 4px 6px #CF9FFF;
 }
-.about .img h1{
+
+.about .img h1 {
     text-align: center;
     margin: 1.5rem 0;
     font-size: 2rem;
 }
-.about .img h1 i{
+
+.about .img h1 i {
     margin-right: 1rem;
     font-size: 2rem;
 }
@@ -303,176 +338,134 @@ div.social{
 
 /* ------------------------Skillls-------------------- */
 
-#skills{
+#skills {
     height: 140vh;
-    width: 100%px;
-    padding: 4rem 6rem;
-    padding: 0;
-    margin:0;
-    background-color:blueviolet;
-
-}
-.skills{
-    display: grid;
-    grid-template-rows: repeat(4 ,1fr);
-    grid-template-columns: repeat(4 ,1fr);
-    row-gap: 2rem;
-    column-gap: 0rem;
-    height: 130vh;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 2rem;
-    background-color: rgba(14, 4, 4,0.4);
-    border-radius: 1rem;
-    
-  
-}
-.skills .item{
-    height: 25rem;
-    width: 25rem;
-    
-
-}
-.skills .item img{
-    width: 25rem;
-    height: 25rem;
-    border-radius: 1.5rem;
-    object-fit: cover;
-    object-position: center;
-    
-    
-
-}
-#education{
-    height: 120vh;
     width: 100%;
-    /* padding: 4rem 6rem; */
-    margin: 0px;
-    /* background-color: black; */
-}
-#education h1{
-    text-align: center;
-   
-}
-#education h1 i{
-    margin-right: 1rem;
-    font-size: 2rem;
-}
-.education {
+    padding: 4rem 2rem;
+    padding: 0;
+    margin: 0;
+    background-color: blueviolet;
     display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
 
-   
 }
-.education .box{
-    height: 60rem;
-    width: 60rem;
-    margin-top: 3rem;
+
+.skills {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-
     justify-content: center;
     align-items: center;
-    background-color: #E6E6FA;
-    border-radius: 2rem;
+    height: 100vh;
+    width: 100%;
+
+    background-color: rgba(14, 4, 4, 0.4);
+    border-radius: 1rem;
+
 
 }
-.education .box h2{
-    margin-bottom: 2rem;
+
+.skills .item {
+    height: 25rem;
+    width: 25rem;
+    /* padding: 5rem; */
+
+
 }
-.education .box img{
-    height: 40rem;
-    width: 40rem;
-    border-radius: 2rem;
+
+.skills .item img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 6.5rem;
     object-fit: cover;
     object-position: center;
+    padding: 5rem;
+
+
 
 
 }
+
+
 
 
 
 /* Project -----------section ----------- */
-#project{
+#project {
     height: 100vh;
     width: 100%;
     background-color: #E6E6FA;
-    display: inline-block;
-    
+    /* display: inline-block; */
+
 }
-.project{
+
+#project h1 {
+    padding-top: 40px;
+    text-align: center;
+
+}
+
+.project {
+    height: 100vh;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    /* justify-content: center; */
     align-items: center;
-   
-
-
+    flex-wrap: wrap;
 }
-.project .item h2{
+
+.project .box {
+
+    height: 250px;
+    width: 250px;
+    border-radius: 25px;
     text-align: center;
-    margin-bottom: 2rem;
-    color: #fff;
-    background-color: blueviolet;
+
+}
+
+.project .box button {
+
+
+    background-color: #fff;
+    font-size: 1.7rem;
     padding: 1rem 3rem;
-    border-radius: 1rem;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    cursor: pointer;
+    /* border: none; */
+    outline: none;
+    border-radius: 0.8rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
 
 }
-.project .item{
-    /* align-self: center; */
-    padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.315);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 2rem;
 
-}
-#project h1{
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.project img{
- 
-    width: 30rem;
-    height: 30rem;
-    object-fit: cover;
-  
-    border-radius: 2rem;
-    
-
-
-}
-.project .item button{
-    padding: 1rem 3rem;
-    margin-top: 2rem;
-    border-radius: 1rem;
-    background-color: black;
-
-}
-.item button a{
+.project .box button:hover {
     color: #fff;
+    background: blueviolet;
+}
+
+.project .box button a {
     text-decoration: none;
-    transition: all 0.3s ease-in-out;
+}
 
+.project .box img {
+
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
 
 }
-.item button a:hover{
-    letter-spacing: 1px;
 
-}
+
 
 
 
 /* -------------------Contact--Section----- */
-#contact{
+#contact {
     padding: 1rem 15rem;
     height: 100vh;
     width: 100%;
@@ -481,28 +474,31 @@ div.social{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 
 
 
 }
-.contact{
+
+.contact {
     height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  
-    
+
+
 
 }
-.contact .box1{
+
+.contact .box1 {
     background-color: rgb(31, 30, 30);
     height: 34rem;
     width: 50rem;
     border-radius: 2rem;
 }
-.contact .box1 h1{
+
+.contact .box1 h1 {
     font-size: 3rem;
     margin: 2rem 0;
     margin-left: 5rem;
@@ -510,53 +506,60 @@ div.social{
 
 
 }
-.contact .box1 h5{
+
+.contact .box1 h5 {
     text-align: start;
 
     font-size: 1.5rem;
     margin-top: 1rem;
     margin-left: 5rem;
-  
+
 
 }
-.contact .box1 h5 i{
+
+.contact .box1 h5 i {
     margin-right: 1rem;
     font-size: 2rem;
     color: blueviolet;
 }
-.contact .icons{
+
+.contact .icons {
     margin-top: 2rem;
     margin-left: 4rem;
-    
+
 
 }
-.contact .icons a{
+
+.contact .icons a {
     text-decoration: none;
     color: white;
     margin: 1rem 1rem;
 
 
 }
-.contact .icons a{
+
+.contact .icons a {
     font-size: 2.5rem;
 }
-.contact .icons a i{
+
+.contact .icons a i {
     color: blueviolet;
 }
 
-.contact .box2{
-    
+.contact .box2 {
+
     /* background-color: rgb(31, 30, 30); */
     height: 40rem;
     width: 50rem;
 
 }
-.contact .box2 form{
+
+.contact .box2 form {
     margin: 1rem 0rem;
 }
 
 
-.contact .box2 input{
+.contact .box2 input {
     display: block;
     margin-top: 2rem;
     margin-left: 2rem;
@@ -564,10 +567,11 @@ div.social{
     outline: none;
     padding: 1rem 2rem;
     border-radius: 1rem;
-    
+
     background-color: rgb(65, 65, 65);
 }
-.contact .box2 textarea{
+
+.contact .box2 textarea {
     display: block;
     margin: 2rem 0;
     margin-left: 2rem;
@@ -575,10 +579,11 @@ div.social{
     outline: none;
     padding: 1rem 2rem;
     border-radius: 1rem;
-    
+
     background-color: rgb(65, 65, 65);
 }
-.contact .box2 button{
+
+.contact .box2 button {
     display: block;
     margin: 2rem 0;
     margin-left: 2rem;
@@ -593,15 +598,22 @@ div.social{
 
 
 }
-.box2 button:hover{
+
+.box2 button:hover {
     background-color: blueviolet;
     border: none;
 
 }
+span#msg{
+    margin-top: 5px;
+    display: block;
+    color: lightseagreen;
+    font-size: 1.5rem;
+}
 
 
 
-footer{
+footer {
     height: 20vh;
     width: 100%;
     display: flex;
@@ -612,25 +624,23 @@ footer{
     background-color: blueviolet;
 
 }
-footer h5{
+
+footer h5 {
     margin-left: 40%;
     margin-top: 2rem;
     font-size: 1.4rem;
 }
-.spans{
+
+.spans {
     color: black;
 
 }
-nav .fa-solid{
+
+nav .fa-solid {
     display: none;
 }
-.menu{
+
+.menu {
     display: none;
 
 }
-
-
-
-
-
-

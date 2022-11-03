@@ -1,34 +1,39 @@
 /* Media qury for small screens ----- */
-@media only screen and (max-width:600px) {
-    
-    body,html{
+@media only screen and (min-width:0px) and (max-width:780px) {
+
+    body,
+    html {
         height: 100%;
         width: 100%;
         margin: 0;
         padding: 0;
         overflow-x: hidden !important;
     }
-    .header-text .text h1{
+
+    .header-text .text h1 {
         font-size: 2rem;
-        
+
     }
-    .header-text .text h2{
+
+    .header-text .text h2 {
         font-size: 1rem;
-        
+
     }
-    #header{
+
+    #header {
         background-color: #fff;
-        
+
         height: 100vh;
         width: 500px;
         /* padding: 5rem 0; */
         display: inline-block;
         padding: 0px;
         margin: 0px;
-        
-    
+
+
     }
-    .header-text{
+
+    .header-text {
         display: flex;
         margin-top: 10%;
         justify-content: center;
@@ -36,18 +41,20 @@
         padding: 0px;
         margin: 0px;
         flex-direction: column-reverse;
-       
+
         /* background: #000; */
-        
-       
+
+
     }
-    .header-text  .photo{
+
+    .header-text .photo {
         /* border: 1px solid black; */
         width: 40rem;
         margin: 0;
-    
+
     }
-    nav .fa-solid{
+
+    nav .fa-solid {
         display: block;
         font-size: 1.5rem;
         padding-bottom: 1rem;
@@ -55,35 +62,42 @@
         top: 10px;
         left: 25px;
     }
-    i.menu{
-        position: absolute;
+
+    i.menu {
+        position: fixed;
         top: 25px;
         left: 320px;
     }
-    .text{
+
+    .text {
         margin-left: 50%;
     }
-    nav{
+
+    nav {
         width: 200px;
         justify-content: center;
         flex-wrap: wrap;
     }
-    nav ul{
+
+    nav ul {
         justify-content: center;
         margin-right: 0rem;
 
     }
-    .logo{
+
+    .logo {
         width: 20rem;
         /* border: 1px solid; */
         margin-top: 0;
     }
-    nav .logo h1{
+
+    nav .logo h1 {
         font-size: 2.5rem;
         margin-left: 4rem;
         text-align: c;
     }
-    nav ul{
+
+    nav ul {
         background-color: blueviolet;
         position: fixed;
         top: -915px;
@@ -94,91 +108,78 @@
         margin-left: 0;
         padding-top: 60px;
         z-index: 1;
-       
+
         transition: top .5s ease-in-out;
 
     }
-    nav ul li{
+
+    nav ul li {
         /* margin-right: 3rem; */
         list-style-type: none;
         display: block;
         margin: 3rem;
         cursor: pointer;
-    
+
     }
-    nav ul li a:hover{
+
+    nav ul li a:hover {
         color: #fff;
     }
-    .header-text .photo img{
-        
+
+    .header-text .photo img {
+
         width: 20rem;
         height: 20rem;
         margin-left: 0rem;
         margin-top: 8rem;
     }
-    .text{
+
+    .text {
         margin-left: 4rem;
     }
-    .header-text{
+
+    .header-text {
         margin-top: 5rem;
     }
-    div.social{
+
+    div.social {
         margin-top: 1rem;
         display: flex;
         /* margin-right: 10rem; */
-    
+
     }
-   
+
     /* ------aaaaaabout section----- */
-    #about{
-        height: 140vh;
+    #about {
+        height: 100vh;
         width: 400px;
-        /* padding: 1rem 1rem; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-overflow: ellipsis;
-        overflow: hidden;
+        padding: 2rem 1rem;
 
-       
-        /* margin: 10rem 0rem; */
-        /* margin: auto; */
     }
-    #about .about{
-        /* height: 10rem; */
-          
 
-      
-        /* margin: auto; */
+    #about .about {}
+
+    .about .about-content {
+        display: inline-block;
+        width: 30rem;
+        background-color: #E6E6FA;
+        border-radius: 2rem;
     }
-    .about .about-content{
-        /* /* margin-left: 3rem; */
-        /* margin-right: 12rem;  */
-            /* margin: 0 1rem; */
-          display: inline-block;
-            width: 30rem;
-            
-            /* border: 1px solid black; */
-            background-color: #E6E6FA;
-            border-radius: 2rem;
-        
-         
-      
-    }
-    .about .img{
-      
+
+    .about .img {
+
         display: none;
-    
+
     }
 
-    .content{
+    .content {
         margin: 1rem 0rem;
         /* animation: slide-up 2s; */
         text-overflow: ellipsis;
         overflow: hidden;
     }
-    
-    .content h1{
+
+    .content h1 {
         margin: 2rem 1rem;
         margin-bottom: 0;
         font-size: 2.5rem;
@@ -186,33 +187,39 @@
         text-overflow: ellipsis;
         overflow: hidden;
     }
-    .content h2{
+
+    .content h2 {
         margin: 0rem 1rem;
         font-size: 1.6rem;
         color: rgb(16, 6, 109);
     }
-    .content p{
+
+    .content p {
         color: rgb(14, 4, 4);
-        
+
         font-size: 1.rem;
         padding: 1rem 1rem;
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
-    
-    
+
+
     }
-    .content .contects{
+
+    .content .contects {
         margin-left: 2rem;
-    
+
     }
-    .content .contects h3{
+
+    .content .contects h3 {
         margin-top: 0.8rem;
     }
-    .content .contects span{
+
+    .content .contects span {
         color: blueviolet;
-    
+
     }
-    .content .contects button{
+
+    .content .contects button {
         margin-top: 3rem;
         padding: 0.5rem 2.1rem;
         background-color: #5D3FD3;
@@ -223,166 +230,126 @@
         border-radius: 1rem;
         letter-spacing: 1px;
         font-size: 1.4rem;
-    
-    
+
+
     }
-    .span{
+
+    .span {
         color: blueviolet;
     }
-    .content .contects button i{
+
+    .content .contects button i {
         font-size: 1rem;
     }
 
 
     /* Skills---section */
-    #skills{
-        height: 200vh;
-        width: 500px;
-        padding: 4rem 1rem;
-        background-color:blueviolet;
-    
+    #skills {
+        height: 1300px;
+        width: 100%;
+
+        background-color: blueviolet;
+
     }
 
 
 
-    .skills{
-        /* grid-template-rows: repeat(2 ,1fr);
-        grid-template-columns: repeat( 2,1fr);
-        row-gap: 10px;
-        height: 140vh; */
+    .skills {
+        height: 1100px;
+        width: 100%;
+
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-evenly;
+
+
 
     }
 
-    .skills .item{
-        height: 10rem;
-        width: 20rem;
-        
-    
+    .skills .item {
+        height: 150px;
+        width: 150px;
+
+
     }
-    .skills .item img{
-        width: 10rem;
-        height: 10rem;
-        border-radius: 1.5rem;
+
+    .skills .item img {
+        height: 170px;
+        width: 170px;
+
+        border-radius: 6.5rem;
         /* padding: 5rem 0; */
         /* object-fit: cover;
         object-position: center; */
-        
-        
-    
-    }
-    /* --------------education---------- */
-    #education{
-        height: 180vh;
-        width: 500px;
-
-        padding: 4rem 6rem;
-        /* background-color: black; */
-    }
-    #education h1{
-        text-align: center;
-        margin-right: 10px;
-        
-
-    }
-    .education{
-        flex-direction: column;
-    }
-    
-    .education .box{
-        height: 45rem;
-        width: 35rem;
-        margin-top: 2rem;
-        margin-right: 125px;
-        flex-direction: column;
-        flex-wrap: wrap;
-    
-       
-    
-    }
-    .education .box h2{
-        margin-bottom: 1rem;
-        font-size: 1rem;
-        
-    }
-    .education .box img{
-        height: 30rem;
-        width: 30rem;
-        border-radius: 2rem;
-        object-fit: cover;
-        object-position: center;
-    
-    
-    }
 
 
-    /* project section */
-    #project{
-        height: 350vh;
-        width: 500px;
+
+    }
+
+    /* ------project section------- */
+    #project {
+        height: 1300px;
+        width: 100%;
         background-color: #E6E6FA;
-        padding-top: 2rem;
-        
+        /* display: inline-block; */
+
     }
-    .project{
+
+    .project {
+        height: 1230px;
+        width: 100%;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        /* justify-content: center; */
-        /* align-items: center; */
-        margin-right: 125px;
-       
-    
-    
-    }
-    .project .item{
-        /* align-self: center; */
-        padding: 1rem;
-        margin-top: 4rem;
-        background-color: rgba(0, 0, 0, 0.315);
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
         flex-direction: column;
-        border-radius: 2rem;
-    
+        justify-content: space-around;
+        align-items: center;
+        /* flex-wrap: wrap; */
     }
-    .project img{
- 
-        width: 25rem;
-        height: 25rem;
-        object-fit: cover;
-      
-        border-radius: 2rem;
-        
-    
-    
+
+    .project .box {
+
+        height: 150px;
+        width: 150px;
+        border-radius: 25px;
+        text-align: center;
+
     }
+
+    .project .box img {
+
+        height: 150px;
+        width: 150px;
+        border-radius: 25px;
+        text-align: center;
+
+    }
+
+
+
+
+
+
 
 
 
     /* contact section */
 
-    #contact{
-        padding: 1rem 4rem;
-        height: 180vh;
-        width: 500px;
+    #contact {
+        /* padding: 1rem 4rem; */
+        height: 1445px;
+        width: 130%;
         background-color: black;
         color: white;
         display: flex;
         align-items: center;
         justify-content: center;
-        
-    
-    
-    
+
+
+
+
     }
-    .contact{
-        margin-top: 5rem;
-        height: 200vh;
+
+    .contact {
+
+        height: 1300px;
         width: 400px;
         display: flex;
         align-items: center;
@@ -390,43 +357,23 @@
         flex-direction: column;
 
         justify-content: center;
-      
-        
-    
+
+
+
     }
-    .contact .box1{
+
+    .contact .box1 {
         margin-right: 20rem;
         margin-bottom: 2rem;
         height: 25rem;
         width: 30rem;
 
     }
-    
 
 
-
-
-
-
-
-
-
-
-   
 }
 
 
 
 
 /* Media query for Tab And Ipaid */
-@media only screen and (max-width:1025px) {
-    body,html{
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-    }
-    ul{}
-
-}
