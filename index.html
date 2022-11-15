@@ -32,8 +32,9 @@
                     <!-- <li><a href="#education"  onclick="closemenu()">Education</a></li> -->
                     <li><a href="#project" onclick="closemenu()">Work</a></li>
                     <li><a href="#contact" onclick="closemenu()">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    <i class="fa-solid fa-xmark" id="xmark" onclick="closemenu()"></i>
                 </ul>
+             
                 <i class="fa-solid fa-bars menu" id="menu" onclick="openmenu()" onscroll="Scrolls()"></i>
             </nav>
             <div class="header-text">
@@ -41,7 +42,7 @@
                 <div class="text">
                     <p>Hello,</p>
                     <h1>I'm <span>Karan Meghawal</span></h1>
-                    <h2>Full Stack Web Developer</h2>
+                    <h1>I'm <span class="auto-type"></span></h1>
                     <button>Contact</button>
                     <div class="social">
                         <a href="https://www.linkedin.com/in/karan-meghawal-4b14a71b5/" target="_blank"><i
@@ -100,9 +101,12 @@
     </div>
 
     <!-- Skills--------section -->
+    <h1 class="center">My <span class="span">Skills</span> </h1>
     <div id="skills">
+        
 
         <div class="skills">
+           
             <div class="item"><img src="images/html.png" alt=""></div>
             <div class="item"><img src="images/css.png" alt=""></div>
             <div class="item"><img src="images/JS.jpg" alt=""></div>
@@ -129,6 +133,8 @@
 
 
     <!-- ---------Project Section---------- -->
+    
+
     <div id="project">
         <h1>My <span class="span">Projects</span></h1>
         <div class="project">
@@ -157,7 +163,10 @@
 
 
     <!-- ---------Contact Me ------------ -->
+    <h1 class="center">Contact <span class="span"> Me</span></h1>
+
     <div id="contact">
+        
         <div class="contact">
             <div class="box1">
                 <h1>Contact Me</h1>
@@ -220,6 +229,7 @@
         })
 
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="index.js"></script>
 </body>
 

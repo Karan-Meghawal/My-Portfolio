@@ -65,7 +65,9 @@ nav ul li a {
 
 
 }
-
+#menu{
+    display: none;
+}
 li a:hover {
     color: blueviolet;
 }
@@ -301,6 +303,10 @@ div.social {
 
 .span {
     color: blueviolet;
+}
+.center{
+    text-align: center;
+    margin: 10px;
 }
 
 .content .contects button i {
@@ -641,6 +647,7 @@ nav .fa-solid {
 }
 
 .menu {
+    position: fixed;
     display: none;
 
 }
