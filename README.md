@@ -8,7 +8,7 @@
 
 - 🌱 I’m currently learning **MERN**
 
-- 👨‍💻 All of my projects are available at [https://karan-meghawal.github.io/My-portfolio/](https://karan-meghawal.github.io/My-portfolio/)
+- 👨‍💻 All of my projects are available at [https://karan-web.netlify.app/](https://karan-web.netlify.app/)
 
 - 💬 Ask me about **React,MERN,Javascript**
 
